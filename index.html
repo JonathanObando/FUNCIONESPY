@@ -1,140 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programación Estructurada - Funciones</title>
+    <title>Electrónica</title>
+    <link rel="icon" type="image/x-icon" href="microchip_11644769.png">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+      
+      body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 
-        body {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            min-height: 100vh;
-            padding: 30px;
-        }
+    background: linear-gradient(
+        270deg,
+        #2a2ee4,
+        #455d82,
+        #8b602f,
+        #131b01,
+        #9a5510,
+        #3b47b7
+    );
+    background-size: 600% 600%;
+    animation: movimientoElectronico 18s ease infinite;
 
-        .contenedor {
-            max-width: 1000px;
-            margin: auto;
-            text-align: center;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Verdana, sans-serif;
+    color: white;
+    text-align: center;
 
-        }
+    font-family: Arial, Verdana, sans-serif;
+    color: rgb(244, 241, 241);
+    text-align: center;
+}
 
-        .objetivo {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            color: #cbd5e1;
-        }
+/* Animación */
+@keyframes movimientoElectronico {
+    0% { background-position: 0% 70%; }
+    50% { background-position: 100% 60%; }
+    100% { background-position: 0% 70%; }
+}
 
-        .grid {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            align-items: center;
-        }
+.contenedor {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
 
-        .card {
-            width: 100%;
-            max-width: 700px;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 20px;
-        }
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
-        .card h2 {
-            color: #38bdf8;
-            margin-bottom: 15px;
-        }
+h2 {
+    margin-top: 30px;
+}
 
-        iframe {
-            width: 100%;
-            height: 360px;
-            border-radius: 12px;
-            border: none;
-        }
+/* MENÚ  */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(144, 128, 208, 0.6);
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    /*COLOR DE BOTON AL PRESIONAR*/
+    background-color: #507860;
+    transform: scale(1.05);
+}
+
+.menu a.activo {
+    background-color: #724fa0;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
     </style>
+    
 </head>
 
 <body>
 
     <div class="contenedor">
+        <h1>PROGRAMACION VISUAL</h1>
 
-        <h1>FUNCIONES CON RETORNO</h1>
+        <p><em>“Siempre es el momento apropiado para hacer lo que es correcto.”</em></p>
+        <p>-- Martin Luther King --</p>
 
-        <p class="objetivo">
-            Objetivo: Realizar 10 ejercicios de funciones con explicación.
-        </p>
+        <h2>SELECCIONA EL TEMA 👇</h2>
+            <nav class="menu">
+    <a href="Ejerfunciones.html">LECCION 1</a>
+  <a href="PANTALLADOS.HTML"> LECCION 2</a>
+  <a href="Trabajoautonomo.html">TRABAJO AUTONOMO </a>
+  <a href="PANTALLAPAR.HTML">TRABAJO EN CLASE KOTLIN </a>
 
-        <div class="grid">
-
-            <div class="card">
-                <h2>Ejercicio 1</h2>
-                <iframe src="https://drive.google.com/file/d/1OSwlPkZsfm9yCCdcadEQWOlutHSfG-J7/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 2</h2>
-                <iframe src="https://drive.google.com/file/d/1UjlCzXiTv_9828A4HzsMv4YXrUgORXwl/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 3</h2>
-                <iframe src="https://drive.google.com/file/d/1_0tbKEQNFChPzSZpev8-6fdCMq0pjFlU/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 4</h2>
-                <iframe src="https://drive.google.com/file/d/16yeYqCrJ6nj44Q3pW4LXQk64B-WfQ-q2/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 5</h2>
-                <iframe src="https://drive.google.com/file/d/1Od7QmpoygID2rziMrtqzSXRd8n5hGxED/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 6</h2>
-                <iframe src="https://drive.google.com/file/d/1EDh5fcL6Khn_ChWKd8Y5J0ziQY-5ZvhV/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 7</h2>
-                <iframe src="https://drive.google.com/file/d/1C2gbKc1fta6onsIACUastbrSoI7JI4hg/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 8</h2>
-                <iframe src="https://drive.google.com/file/d/1GO-TOAv6cuWy6QIbyTQs99i3PWvMT38p/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 9</h2>
-                <iframe src="https://drive.google.com/file/d/1ZNIi91Tk9p8cT7d_uL6HTEveKYeR7fZL/preview?usp=sharing"></iframe>
-            </div>
-
-            <div class="card">
-                <h2>Ejercicio 10</h2>
-                <iframe src="https://drive.google.com/file/d/1vwKa0tFE5Nih8qSmzgfWeGrvPp7JgRSr/preview?usp=sharing"></iframe>
-            </div>
-
-        </div>
-
+      
+    
+    
+</nav>
     </div>
-
+    <!--PIE DE PAGINA-->
+     <footer>
+        
+        by Jonathan Obando|2026
+        
+    </footer>
+ 
 </body>
 
 </html>
